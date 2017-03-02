@@ -27,6 +27,6 @@ class Handlers
 
         return !app('user')->isLoggedIn() &&
         (!$request->has($settings->get('key')) ||
-            !$request->input($settings->get('key')) == $settings->get('value'));
+            $request->input($settings->get('key')) !== $settings->get('value'));
     }
 }
