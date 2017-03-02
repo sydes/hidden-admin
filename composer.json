@@ -1,0 +1,18 @@
+{
+  "name": "sydes/hidden-admin",
+  "description": "Changes admin panel url",
+  "version": "1.0",
+  "type": "sydes-module",
+  "keywords": ["sydes", "plugin", "security"],
+  "license": "GPL-3.0+",
+  "authors": [
+    {
+      "name": "ArtyGrand",
+      "email": "artygrand@gmail.com",
+      "homepage": "http://artygrand.ru"
+    }
+  ],
+  "require": {
+    "composer/installers": "~1.0"
+  }
+}
