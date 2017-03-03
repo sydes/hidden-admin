@@ -2,12 +2,15 @@
 
 namespace Module\HiddenAdmin;
 
+use App\Route;
+
 class Controller
 {
-    public static $routes = [
-        ['GET', '/admin/settings/hidden-admin', 'HiddenAdmin@edit'],
-        ['POST', '/admin/settings/hidden-admin', 'HiddenAdmin@update'],
-    ];
+    public static function routes(Route $r)
+    {
+        $r->get('/admin/settings/hidden-admin', 'HiddenAdmin@edit');
+        $r->post('/admin/settings/hidden-admin', 'HiddenAdmin@update');
+    }
 
     public function install()
     {
