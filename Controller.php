@@ -8,8 +8,8 @@ class Controller
 {
     public static function routes(Route $r)
     {
-        $r->get('/admin/settings/hidden-admin', 'HiddenAdmin@edit');
-        $r->post('/admin/settings/hidden-admin', 'HiddenAdmin@update');
+        $r->get('/admin/hidden-admin/settings', 'HiddenAdmin@edit');
+        $r->post('/admin/hidden-admin/settings', 'HiddenAdmin@update');
     }
 
     public function install()
@@ -54,6 +54,7 @@ class Controller
         ])->commit();
 
         notify(t('saved'));
+
         return back();
     }
 }
