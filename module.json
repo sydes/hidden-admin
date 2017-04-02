@@ -1,0 +1,12 @@
+{
+  "name": "Hidden admin",
+  "description": "Plugin that changes admin panel url",
+  "version": "1.0",
+  "keywords": ["plugin", "security"],
+  "license": "GPL-3.0+",
+  "authors": [
+    {
+      "name": "ArtyGrand"
+    }
+  ]
+}
